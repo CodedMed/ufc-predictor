@@ -1,0 +1,28 @@
+# Virtual environments (870M + 12M - never commit these)
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Streamlit local secrets (config.toml IS tracked - it carries the theme)
+.streamlit/secrets.toml
+
+# Note on data + model artefacts: these ARE tracked on purpose.
+#   data/ufc-master.csv  - source data, everything derives from it
+#   fighter_db.pkl       - built by 01_explore.ipynb, NOT by
+#                          train_enhanced_models.py, so it cannot be
+#                          regenerated from the training script alone
+#   model.pkl, features.pkl, models/*.pkl
+#                        - regenerable via train_enhanced_models.py, but
+#                          tracked so a checkout runs without retraining

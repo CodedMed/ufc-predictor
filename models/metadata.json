@@ -1,0 +1,32 @@
+{
+  "outcome_accuracy": 0.6987951807228916,
+  "round_accuracy": 0.5843373493975904,
+  "method_accuracy": 0.5,
+  "round_classes": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "method_classes": [
+    "Decision",
+    "KO/TKO",
+    "Submission"
+  ],
+  "features": [
+    "height_dif",
+    "reach_dif",
+    "age_dif",
+    "win_streak_dif",
+    "longest_win_streak_dif",
+    "win_dif",
+    "sig_str_dif",
+    "avg_td_dif",
+    "sig_str_pct_dif",
+    "td_pct_dif",
+    "losses_dif",
+    "odds_dif",
+    "no_of_rounds"
+  ]
+}
