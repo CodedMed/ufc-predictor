@@ -1,5 +1,9 @@
-streamlit
-pandas
-scikit-learn
-joblib
-requests
+# Pinned deliberately. The .pkl model artefacts are pickled by a specific
+# scikit-learn/joblib build - loading them under a different version raises
+# InconsistentVersionWarning and can fail outright, so a hosted deploy must
+# install the same versions the models were trained with.
+streamlit==1.61.1
+pandas==3.0.5
+scikit-learn==1.9.0
+joblib==1.5.3
+requests==2.34.2
